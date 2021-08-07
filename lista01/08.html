@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      var VelocidadePista = parseFloat(prompt('Digite a Velocidade da Pista'))
+      var VelocidadeVeiculo = parseFloat(prompt('Digite a Velocidade da Pista'))
+
+      if (VelocidadeVeiculo <= VelocidadePista) {
+        document.write('Bom motorista')
+      } else if (VelocidadeVeiculo <= VelocidadePista + 10) {
+        document.write('Multa de R$50,00')
+      } else if (VelocidadeVeiculo <= VelocidadePista + 20) {
+        document.write('Multa de R$100,00')
+      } else {
+        document.write('Multa de R$200,00')
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

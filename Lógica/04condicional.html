@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aprendendo HTML</title>
+
+    <script>
+      /* 
+      OPERADORES RELACIONAIS
+      > MAIOR
+      < MENOR
+      >= MAIOR OU IGUAL
+      <= MENOR OU IGUAL
+      == IGUAL
+      != DIFERENTE      
+      */
+
+      // Obter notas
+      var nota1 = parseFloat(prompt('Digite sua primeira nota: '))
+      var nota2 = parseFloat(prompt('Digite sua segunda nota: '))
+      var media = (nota1 + nota2) / 2
+
+      // Condicional
+      //if (media >= 7) {
+      //  alert('Aprovado com média ' + media)
+      // } else {
+      //   alert('Reprovado com média ' + media)
+      // }
+
+      // Operador
+      // ? - ENTÃO
+      // : SENÃO
+
+      alert(
+        (media >= 7 ? 'Aprovado(a)' : 'Reprovado(a)') + ' com média ' + media
+      )
+    </script>
+  </head>
+  <body></body>
+</html>
