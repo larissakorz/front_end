@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    function detalhes(codigo){
+
+      if(codigo == 2) {
+        document.getElementById("descricao").innerHTML = "Estruturas web"
+      }else if(codigo == 3) {
+        document.getElementById("descricao").innerHTML = "Estilização"
+      }else if(codigo == 4) {
+        document.getElementById("descricao").innerHTML = "Ações"
+      }else {
+        document.getElementById("descricao").innerHTML = ""
+      }
+    }
+  </script>
+</head>
+<body>
+  
+  <select onchange="detalhes(this.value)">
+    <option value="1">Cursos</option>
+    <option value="2">HTML</option>
+    <option value="3">CSS</option>
+    <option value="4">JavaScript</option>
+  </select>
+
+  <p id="descricao"></p>
+</body>
+</html>
