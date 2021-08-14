@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    div{
+      background-color: rgb(240, 162, 198);
+      border: 10px double rgb(2, 2, 26);
+      border-radius: 8px;
+      width: 500px;
+      margin: 10px auto;
+    }
+
+    img{
+      width: 100%;
+    }
+
+    input{
+      width: 350px;
+      padding: 10px;
+      margin: 5px;
+    }
+
+    button{
+      padding: 10px;
+      margin-top: -20px;
+      position: absolute;
+      margin-left: 20px;
+    }
+
+    p{
+      text-align: center;
+    }
+  </style>
+
+  <script>
+
+    function calcular(){
+      var peso = document.getElementById("peso")
+      var altura = document.getElementById("altura")
+      var resultado = document.getElementById("resultado")
+      var media = (parseFloat(peso.value / (altura.value * altura.value)))
+
+     if(media <= 17){
+       resultado.innerHTML=("Abaixo do peso")
+     }else if(media <= 25){
+       resultado.innerHTML=("Peso normal")
+     }else if(media <= 30){
+       resultado.innerHTML=("Acima do peso")
+     }else if(media <= 35){
+       resultado.innerHTML=("Obesidade I")
+     }else if(media <= 40){
+       resultado.innerHTML=("Obesidade II")
+     }else {
+       resultado.innerHTML=("Obesidade III")
+     }
+
+      peso.value = ""
+      altura.value = ""
+
+      peso.focus();
+    }
+  </script>
+</head>
+<body>
+
+    <div>
+      <img src="../Imagens/emagrecer.jpg" alt="Corpo humano">
+
+      <p id="resultado"></p>
+
+      <input type="text" placeholder="Informe seu peso" id="peso">
+      <input type="text" placeholder="Informe sua altura" id="altura">
+      <button onclick="calcular()">Calcular</button>
+
+    </div>
+  
+</body>
+</html>
