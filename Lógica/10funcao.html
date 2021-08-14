@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    div{
+      background-color: rgb(155, 151, 151);
+      border: 10px double rgb(2, 2, 26);
+      border-radius: 10px;
+      width: 500px;
+      margin: 100px auto;
+      box-shadow: 0px 0px 10px rgb(97, 42, 42);
+    }
+
+    img{
+      margin-left: 116px;
+    }
+
+    input{
+      width: 460px;
+      padding: 10px;
+      margin: 7px;
+    }
+
+    button{
+      padding: 10px;
+      margin-left: 220px;
+      margin-bottom: 10px;
+    }
+
+    p{
+      text-align: center;
+    }
+  </style>
+
+  <script>
+
+    function calcular(){
+      // Obter os elementos HTML
+      var nota1 = document.getElementById("nota1")
+      var nota2 = document.getElementById("nota2")
+      var nota3 = document.getElementById("nota3")
+      var resultado = document.getElementById("resultado")
+
+      // Calculo de média
+      var media = (parseFloat(nota1.value) + parseFloat(nota2.value) + parseFloat(nota3.value)) / 3
+
+      // Exibir resultado
+      resultado.innerHTML = media >= 7 ? "Aprovado(a) com média " + media.toFixed(1) : "Reprovado(a) com média " + media.toFixed(1)
+
+      // Alterar cor do texto
+      if(media >= 7){
+        resultado.style.color = "green"
+      }else{
+        resultado.style.color = "red"
+      }
+      // Limpar campos
+      nota1.value = ""
+      nota2.value = ""
+      nota3.value = ""
+
+      // Cursor no campo primeira nota
+      nota1.focus();
+    }
+  </script>
+</head>
+<body>
+   <div>
+      <img src="../Imagens/3099383_student_man_icon.png" alt="Imagem de um estudante">
+
+      <p id="resultado"></p>
+
+      <input type="text" placeholder="Primeira nota" id="nota1">
+      <input type="text" placeholder="Segunda nota" id="nota2">
+      <input type="text" placeholder="Terceira nota" id="nota3">
+      <button onclick="calcular()">Calcular</button>
+   </div>
+
+</body>
+</html>
