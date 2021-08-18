@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function calcular(tipo){
+
+      var valor = document.getElementById("valor")
+
+      var resultado = document.getElementById("resultado")
+
+      // Escolha
+      switch(tipo){
+        case "1":
+        resultado.innerHTML = "U$ "+(valor.value / 5.30)
+        break
+
+        case "2":
+        resultado.innerHTML = "E "+(valor.value / 6.50)
+        break
+
+        case "3":
+        resultado.innerHTML = "L "+(valor.value / 7.50)
+        break
+
+        case "4":
+        resultado.innerHTML = "R$ "+(valor.value * 5.30)
+        break
+
+        case "5":
+        resultado.innerHTML = "R$ "+(valor.value * 6.50)
+        break
+
+        case "6":
+        resultado.innerHTML = "R$ "+(valor.value * 7.50)
+        break
+      }
+    }
+
+  </script>
+</head>
+<body>
+
+  <p id="resultado"></p>
+
+  <input type="text" placeholder="Informe um valor" id="valor">
+
+  <select onchange="calcular(this.value)">
+    <option value="0">Selecione o tipo de moeda</option>
+    <option value="1">Real para Dólar</option>
+    <option value="2">Real para Euro</option>
+    <option value="3">Real para Libra</option>
+    <option value="4">Dólar para Real</option>
+    <option value="5">Euro para Real</option>
+    <option value="6">Libra para Real</option>
+  </select>
+
+</body>
+</html>
