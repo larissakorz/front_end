@@ -16,7 +16,66 @@
         menu+= "4) Pomerode\n"
         menu+= "5) Finalizar votação\n"
 
-        alert(menu)
+        // Opção
+        var opcao = 0
+
+        // Contadores
+        var blumenau = 0
+        var timbo = 0
+        var indaial = 0
+        var pomerode = 0
+
+        // Laço
+        while(opcao != 5){
+          opcao = parseInt(prompt(menu))
+
+          switch(opcao){
+            case 1:
+            blumenau++
+            break
+
+            case 2:
+            timbo++
+            break
+
+            case 3:
+            indaial++
+            break
+
+            case 4:
+            pomerode++
+            break
+
+            case 5:
+            alert("Votação finalizada")
+            break
+
+            default:
+            alert("Opção inválida")
+          }
+        }
+
+        // Somar os votos
+        var total = blumenau + timbo + indaial + pomerode
+
+        // Percentual
+        var percentualBlumenau = (100/total) * blumenau
+        var percentualTimbo = (100/total) * timbo
+        var percentualIndaial = (100/total) * indaial
+        var percentualPomerode = (100/total) * pomerode
+
+        // Exibir resultados
+        document.write("Participaram "+total+" eleitores<hr>")
+
+        document.write("Blumenau: "+blumenau+"<br>")
+        document.write("Timbó: "+timbo+"<br>")
+        document.write("Indaial: "+indaial+"<br>")
+        document.write("Pomerode: "+pomerode+"<br>")
+
+        document.write(percentualBlumenau+"% votaram em Blumenau<br>")
+        document.write(percentualTimbo+"% votaram em Timbó<br>")
+        document.write(percentualIndaial+"% votaram em Indaial<br>")
+        document.write(percentualPomerode+"% votaram em Pomerode")
   </script>
 </head>
 <body>

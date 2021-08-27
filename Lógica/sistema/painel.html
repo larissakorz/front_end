@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="estilos.css">
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</head>
+<body>
+  
+  <div>
+    <input type="text" id="nome" placeholder="Informe o nome do produto">
+    <input type="number" id="valor" placeholder="Informe o valor do produto">
+    <input type="text" id="marca" placeholder="Informe a marca do produto">
+    <button onclick="cadastrar()">Cadastrar</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Valor</th>
+        <th>Marca</th>
+        <th>Excluir</th>
+      </tr>
+    </thead>
+
+    <tbody id="tabela"></tbody>
+  </table>
+</body>
+</html>

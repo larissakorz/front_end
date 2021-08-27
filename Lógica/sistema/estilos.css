@@ -1,0 +1,44 @@
+div{
+  background-color: rgb(221, 208, 231);
+  padding: 10px;
+  border: 1px solid tan; /*borda*/
+  border-radius: 5px;
+  width: 500px; /*largura*/
+  margin: 0 auto; /*margem*/
+  text-align: center;
+}
+
+input{
+  width: 486px; /*largura*/
+  padding: 5px;
+  border: 1px solid tan; /*borda*/
+  border-radius: 5px;
+  margin-bottom: 10px; /*margem dos botoes*/
+}
+
+button{
+  background: linear-gradient(to bottom, #bc91cc 0%,#90659c 50%,#956ba7 51%,#ae8fbd 100%);
+  border: 1px solid #2b3b5e;
+  border-radius: 5px;
+  padding: 5px
+}
+
+button:hover{
+  box-shadow: 0px 0px 5px #2b3b5e;
+  cursor: pointer
+}
+
+table{
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* Linhas pares dentro do tbody ficarão com a cor cinza */
+tbody tr:nth-child(odd){
+  background-color: rgb(179, 174, 174);
+}
+
+thead{
+  background-color: black;
+  color:white;
+}

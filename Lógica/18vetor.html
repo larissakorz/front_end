@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+
+      // Vetor
+      var nomes = []
+
+      // Continuar
+      var continuar = true
+
+      // Laço
+      while(continuar == true){
+
+          //Obter um nome
+          nomes.push(prompt("Informe um nome"))
+
+          continuar = confirm("Deseja cadastrar mais um usuário?")
+      }
+
+      // Exibir a quantidade de cadastros efetuados
+      if(nomes.length == 1){
+        document.write("Há apenas um registro")
+      }else{
+        document.write("Foram registrados "+nomes.length+" usuários")
+      }
+
+      // Linha
+      document.write("<hr>")
+
+      // Listar nomes
+      for(var indice = 0; indice < nomes.length; indice++){
+        document.write(nomes[indice] + "<br>")
+      }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

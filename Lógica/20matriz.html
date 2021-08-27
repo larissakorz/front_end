@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+      var dados = []
+
+      function cadastrar(){
+          
+        // Obter os elementos input
+        var nome = document.getElementById("nome")
+        var idade = document.getElementById("idade")
+
+        // Obter o id lista
+        var lista = document.getElementById("lista")
+
+        // Cadastrar na matriz
+        dados.push([nome.value, idade.value])
+
+        //console.table(dados)
+
+        // Limpar lista
+        lista.innerHTML = ""
+        //innerhtml - tudo que for input, div, não é mostrado
+
+        // Exibir os registros
+        for(var i=0; i<dados.length; i++) {
+          lista.innerHTML += dados[1][0] + " - " + dados[i][0] + "<hr>"
+        }
+      }
+  </script>
+</head>
+<body>
+  
+    <input type="text" id="nome" placeholder="Informe nome">
+    <input type="number" id="idade" placeholder="Informe idade">
+    <button onclick="cadastrar()">Cadastrar</button>
+
+    <div id="lista"></div>
+</body>
+</html>

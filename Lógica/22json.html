@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    // Vetor
+    var vetor = [
+      {"curso":"HTML", "valor":900, "dia":"Sábado"},
+      {"curso":"Java", "valor":1700, "dia":"Segunda"},
+      {"curso":"C#", "valor":1800, "dia":"Quarta"},
+      {"curso":"React", "valor":1200, "dia":"Terça"},
+      {"curso":"Lógica", "valor":1100, "dia":"Sexta"}
+    ]
+
+      // Console
+      console.table(vetor)
+
+      // Exibir no navegador
+      for(var i=0; i<vetor.length; i++){
+        document.write(vetor[i].curso+"<br>")
+        document.write("R$ "+vetor[i].valor+"<br>")
+        document.write(vetor[i].dia+"<hr>")
+      }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

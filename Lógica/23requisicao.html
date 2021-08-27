@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    fetch("https://jsonplaceholder.typicode.com/posts")
+    .then(retorno => retorno.json())
+    .then(retorno => {
+
+      
+      // Tabela
+       var tabela = document.getElementById("tabela")
+
+       //Laço
+       for(var i=0; i<retorno.length; i++){
+          
+          // Lista
+          var linha = tabela.insertRow(-1)
+          
+          var colunaIdUsuario = linha.insertCell(0)
+          var colunaId = linha.insertCell(1)
+          var colunaTitulo = linha.insertCell(2)
+          var colunaTexto = linha.insertCell(3)
+          
+          // Valores
+          colunaIdUsuario.innerHTML = retorno[i].userId
+          colunaId.innerHTML = retorno[i].id
+          colunaTitulo.innerHTML = retorno[i].title
+          colunaTexto.innerHTML = retorno[i].body
+        }
+      })
+        
+  </script>
+</head>
+<body>
+  
+  <table border="1" id="tabela"></table>
+</body>
+</html>

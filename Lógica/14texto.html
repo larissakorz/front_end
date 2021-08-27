@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    // Variável
+    var texto = prompt("Informe um texto")
+
+    // Índice
+    var indice = 0
+
+    // Vogais e consoantes
+    var vogais = 0 
+    var consoantes = 0
+
+    //Laço
+    while(indice < texto.length){
+      document.write((indice+1)+" - "+texto.charAt(indice)+"<br>")
+
+      if(texto.charAt(indice) == "a" || texto.charAt(indice) == "e" || texto.charAt(indice) == "i"
+      || texto.charAt(indice) == "o" || texto.charAt(indice) == "u"){ 
+        vogais++
+    }else{
+      consoantes++
+    }
+
+    indice++
+  }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="script1.js"></script>
+
+ <link rel="stylesheet" href="estilo1.css">
+ 
+</head>
+<body>
+  
+  <div>
+    <input type="text" id="time1" placeholder="Informe seu Time">
+    <input type="number" id="pontuacao1" placeholder="Informe sua Pontuação">
+    <input type="text" id="time2" placeholder="Informe seu Time">
+    <input type="number" id="pontuacao2" placeholder="Informe sua Pontuação">
+    <input type="date" id="data">
+    <input type="text" id="local" placeholder="Local do jogo">
+    <br>
+    <button onclick="cadastrar()">Cadastrar</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Time 1</th>
+        <th>Pontuação</th>
+        <th>Time 2</th>
+        <th>Pontuação</th>
+        <th>Data</th>
+        <th>Local do jogo</th>
+      </tr>
+    </thead>
+
+    <tbody id="tabela"></tbody>
+  </table>
+  
+</body>
+</html>
