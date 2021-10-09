@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<!-- Estilo -->
+  <style>
+    form{
+      width: 50%;
+      margin: 2% auto;
+    }
+
+    input{
+      margin-top: 5px;
+    }
+
+  </style>
+
+  <script>
+
+    let vetor = [];
+
+    // Função
+    const cadastrar = () => {
+
+      // Obter elementos 
+      let nome = document.getElementById("nome");
+      let idade = document.getElementById("idade");
+      let cidade = document.getElementById("cidade");
+      let tabela = document.getElementById("tabela");
+
+      // Criar objeto
+      let obj = {
+        "nome" : nome.value,
+        "idade" : idade.value,
+        "cidade" : cidade.value
+      }
+
+      // Cadastrar no vetor
+      vetor.push(obj);
+
+      // Limpar a tabela
+      tabela.innerHTML = "";
+
+      // Adicionar dados do vetor na tabela
+      for(let i = 0; i < vetor.length; i++){
+
+          // Criar linha de tabela
+          let linha = tabela.insertRow(-1);
+
+          // Colunas
+          let colunaIndice = linha.insertCell(0);
+          let colunaNome   = linha.insertCell(1);
+          let colunaIdade  = linha.insertCell(2);
+          let colunaCidade = linha.insertCell(3);
+
+          // Valor das colunas
+          colunaIndice.innerHTML = i+1;
+          colunaNome.innerHTML = vetor[i].nome;
+          colunaIdade.innerHTML = vetor[i].idade;
+          colunaCidade.innerHTML = vetor[i].cidade;
+
+      }
+
+      // Limpar os campos
+      nome.value   = "";
+      idade.value  = "";
+      cidade.value = "";
+
+      // Cursor no campo
+      nome.focus();
+
+    }
+  </script>
+</head>
+<body>
+  
+  <!-- Formulário  -->
+  <form>
+    <input type="text" placeholder="Nome" id="nome" class="form-control">
+    <input type="number" placeholder="Idade" id="idade" class="form-control">
+    <input type="text" placeholder="Cidade" id="cidade" class="form-control">
+    <input type="button" value="Cadastrar" class="btn btn-primary" onclick="cadastrar()">
+  </form>
+
+  <!-- Tabela -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Cidade</th>
+      </tr>
+    </thead>
+
+      <tbody id="tabela"></tbody> 
+  </table>
+
+</body>
+</html>

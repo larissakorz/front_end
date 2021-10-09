@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function enviar (){
+
+      var nota1 = parseFloat(document.getElementById("nota1").value);
+      var nota2 = parseFloat(document.getElementById("nota2").value);
+      var nota3 = parseFloat(document.getElementById("nota3").value);
+
+      var media = (nota1+nota2+nota3)/3;
+
+      document.getElementById("retorno").innerHTML = media >= 7 ? "Aprovado(a)" : "Reprovado(a)";
+    }
+  </script>
+</head>
+<body>
+
+  <input type="number" placeholder="Informe a primeira nota" id="nota1">
+  <input type="number" placeholder="Informe a segunda nota" id="nota2">
+  <input type="number" placeholder="Informe a terceira nota" id="nota3">
+  <button onclick="enviar()">Enviar</button>
+
+  <p id="retorno"></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+    function enviar (){
+      var produto = parseFloat(document.getElementById("produto").value);
+      var pagamento = document.getElementById("pagamento").value;
+
+      if (produto > 500 && pagamento=="á vista"){
+        document.getElementById("retorno").innerHTML=(produto*0.9)
+      }else{
+        document.getElementById("retorno").innerHTML=(produto)
+      }
+    }
+  </script>
+</head>
+<body>
+  
+  <input type="text" placeholder="Informe o valor do produto" id="produto">
+  <input type="text" placeholder="Informe a forma de pagamento" id="pagamento">
+  <button onclick="enviar()">Enviar</button>
+
+  <p id="retorno"></p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+  function enviar(){
+
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var num3 = parseFloat(document.getElementById("num3").value);
+
+
+    if(num1 < num2 || num3){
+      document.getElementById("retorno").innerHTML=(num1)
+    }else if(num2 < num1 || num3){
+      document.getElementById("retorno").innerHTML=(num2)
+    }else(num3 < num1 || num2){
+      document.getElementById("retorno").innerHTML=(num3)
+    }
+   }
+  </script>
+</head>
+<body>
+  
+  <input type="number" placeholder="Informe um número" id="num1">
+  <input type="number" placeholder="Informe um número" id="num2">
+  <input type="number" placeholder="Informe um número" id="num3">
+  <button onclick="enviar()">Enviar</button>
+  
+  <p id="retorno"></p>
+</body>
+</html>

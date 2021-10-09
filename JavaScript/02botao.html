@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function incremento(){
+
+      // Obter o número no elemento <p>
+        let numero = parseInt(document.getElementsByTagName("p")[0].innerHTML);
+
+        // Incrementar o valor
+        numero+=1;
+      
+      //  Retornar o valor incrementa
+      document.getElementsByTagName("p") [0].innerHTML = numero;
+
+      /* Sempre que houver algum cálculo, faça a conversão de valores 
+      parsetInt(): converter número inteiro
+      parsetFloat(): Converter para um numero real */
+    }
+
+    // Arrow Function
+    decremento = () => {
+      // Obter o objeto <p>
+        var objetoP = document.getElementsByTagName ("p") [0];
+
+        // Decrementa e atualiza o elemento <p>
+          objetoP.innerHTML-=1;
+
+    }
+  </script>
+</head>
+<body>
+  
+  <p>0</p>
+
+  <button onclick="incremento()">+1</button>
+  <button onclick="decremento()">-1</button>
+</body>
+</html>

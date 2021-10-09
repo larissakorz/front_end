@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+<!-- CSS -->
+<link rel="stylesheet" href="10estilos.css">
+
+<!-- JS -->
+<script src="10script.js"></script>
+</head>
+<body>
+  
+  <!-- Formulário -->
+  <form>
+    <div id="alerta" class="alert"></div>
+    <input type="text" placeholder="Nome"            id="nome"                 class="form-control">
+    <input type="number" placeholder="Primeira nota" id="nota1"                class="form-control">
+    <input type="number" placeholder="Segunda nota"  id="nota2"                class="form-control">
+    <input type="button" onclick="cadastrar()"   value="Cadastrar"     id="btnCadastrar"     class="btn btn-primary">
+    <input type="button" onclick="editar()"value="Editar"              id="btnEditar"            class="btn btn-warning">
+    <input type="button" onclick="remover() "value="Remover"             id="btnRemover"           class="btn btn-danger">
+    <input type="button" onclick="cancelar() "value="Cancelar"            id="btnCancelar"          class="btn btn-secondary">
+  </form>
+
+  <!-- Tabela -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+        <th>Média</th>
+        <th>Situação</th>
+        <th>Editar</th>
+      </tr>
+    </thead>
+
+    <tbody id="tabela"></tbody>
+  </table>
+</body>
+</html>

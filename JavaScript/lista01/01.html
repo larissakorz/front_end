@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    function enviar () {
+
+    var nome = document.getElementById("nome").value;
+    var idade = document.getElementById("idade").value;
+    var cidade = document.getElementById("cidade").value;
+
+    document.getElementById("retorno").innerHTML = "Meu nome é "+nome+" tenho "+idade+ " anos e moro em "+cidade;
+    }
+  
+  </script>
+</head>
+<body>
+  
+  <input type="text" placeholder="Informe seu nome" id="nome">
+  <input type="text" placeholder="Informe sua idade" id="idade">
+  <input type="text" placeholder="Informe sua cidade" id="cidade">
+  <button onclick="enviar()">Enviar</button>
+
+  <p id="retorno"></p>
+</body>
+</html>

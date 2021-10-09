@@ -1,0 +1,18 @@
+form{
+  width: 50%;
+  margin: 2% auto;
+}
+
+form input{
+  margin-top: 10px;
+}
+
+form input[type="button"]{
+  margin-right: 10px;
+}
+
+#btnEditar,
+#btnRemover,
+#btnCancelar{
+  display: none;
+}

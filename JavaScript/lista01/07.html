@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<script>
+  function verificar (){
+
+    var num1 = parseInt(document.getElementById("num1").value);
+    var num2 = parseInt(document.getElementById("num2").value);
+
+    if(num1 == num2){
+      document.getElementById("retorno").innerHTML = (num1 + num2);
+    }else{
+      document.getElementById("retorno").innerHTML = (num1 * num2);
+    }
+  }
+</script>
+<body>
+  
+  <section>
+    <input type="number" placeholder="Informe um número" id="num1">
+    <input type="number" placeholder="Informe um número" id="num2">
+    <button onclick="verificar()">Verificar</button>
+  </section>
+
+  <p id="retorno"></p>
+</body>
+</html>

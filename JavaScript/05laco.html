@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+
+      //Esperar carregar todo o HTML e CSS
+      window.onload = function(){
+        let lacoEnquanto = document.getElementById("lacoEnquanto");
+        let lacoFacaEnquanto = document.getElementById("lacoFacaEnquanto");
+        let lacoPara = document.getElementById("lacoPara");
+
+        // Indice
+        let indice = 1
+
+        while(indice < 11){
+          lacoEnquanto.innerHTML += indice + "<br>";
+          indice++;
+        }
+        lacoEnquanto.innerHTML += "<hr>";
+
+        do{
+          lacoFacaEnquanto.innerHTML += indice + "<br>";
+          indice--;
+        }while(indice > 0);
+        lacoFacaEnquanto.innerHTML += "<hr>";
+        
+        for(let i = 0; i < 10; i++){
+          lacoPara.innerHTML += i + "<br>";
+        }
+      }
+  </script>
+</head>
+<body>
+  
+  <div id="lacoEnquanto"></div>
+  <div id="lacoFacaEnquanto"></div>
+  <div id="lacoPara"></div>
+
+</body>
+</html>

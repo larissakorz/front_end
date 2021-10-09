@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script>
+    evento = () => {
+
+      let nota1 = parseFloat(document.getElementById("nota1").value);
+      let nota2 = parseFloat(document.getElementById("nota2").value);
+
+      let situacao = document.getElementById("situacao");
+
+      // Reset
+      nota1.style.backgroundColor = "white";
+      nota2.style.backgroundColor = "white";
+
+      if(isNaN(parseFloat(nota1.value))) {
+        nota1.style.backgroundColor = "red";
+        situacao.innerHTML = "Favor informar a primeira nota";
+      }else if(isNaN(nota2)){
+        nota2.style.backgroundColor = "red";
+        situacao.innerHTML = "Favor informar a segunda nota";
+      }else{
+        
+        let calculo = (nota1+nota2)/2;
+
+        situacao.innerHTML = calculo >= 7 ? "Aprovado(a)" : "Reprovado(a)";
+      }
+    }
+    </script>
+</head>
+<body>
+  
+  <input type="number" placeholder="Nota1" id="nota1">
+  <input type="number" placeholder="Nota2" id="nota2">
+  <button onclick="evento()">Realzar a média</button>
+
+  <p id="situacao"></p>
+</body>
+</html>
