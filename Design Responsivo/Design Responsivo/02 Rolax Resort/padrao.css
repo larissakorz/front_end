@@ -1,0 +1,24 @@
+@font-face {
+  font-family: fonteResort;
+  src: url(Metal\ Lady\ -\ Personal\ Use.otf);
+}
+
+*{
+  margin: 0px;
+}
+header{
+  background-color: rgb(236, 142, 125);
+}
+
+.quartos{
+  background-color: rgb(224, 218, 218);
+}
+
+.pratos{
+  background-color: rgb(224, 218, 218);
+}
+/* 
+body{
+  background-image: url(imagens/banner.jpg);
+  background-repeat: no-repeat;
+} */

@@ -1,0 +1,41 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header img{
+  padding: 20px;
+}
+
+header a{
+  padding: 58px 20px;
+  display: inline-block;
+  color:white;
+  text-decoration: none;
+}
+
+header a:hover{
+  background-color: rgb(202, 200, 200);
+}
+
+select{
+  display: none;
+}
+
+.sobre{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex; /*Deixar um do lado do outro*/
+  justify-content: space-between;
+}
+
+.sobre div{
+  width: 650px;
+}
+
+.sobre p{
+  text-align: justify; /* Deixar as linhas retas*/
+  text-indent: 30px; /*Paragrafo*/
+  line-height: 25px;
+  margin-top: 50px;
+}

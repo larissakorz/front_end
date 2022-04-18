@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    @media screen and (min-width: 1000px) {
+      body{
+        background-color: gray;
+      }
+
+      h1::after{
+        content: "Grande";
+      }
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 999px) {
+      body{
+        background-color: yellow;
+      }
+
+      h1::after{
+        content: "Média";
+      }
+    }
+
+    @media screen and (max-width: 599px) {
+      body{
+        background-color: blue;
+      }
+
+      h1::after{
+        content: "Pequena";
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Tipo de tela: </h1>
+</body>
+</html>

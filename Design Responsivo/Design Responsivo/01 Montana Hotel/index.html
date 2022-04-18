@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Padrao -->
+  <link rel="stylesheet" href="padrao.css">
+
+  <!-- Media Queries -->
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="pequeno.css">
+  <link rel="stylesheet" media="screen and (min-width: 601px) and (max-width: 1000px)" href="medio.css">
+  <link rel="stylesheet" media="screen and (min-width: 1001px)" href="grande.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <img src="imagens/logo">
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Suítes</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <select>
+      <option value="">Início</option>
+      <option value="">Sobre</option>
+      <option value="">Suítes</option>
+      <option value="">Contato</option>
+    </select>
+  </header>
+  
+  <main>
+
+      <section class="fotorama" data-autoplay="true">
+        <img src="imagens/banner/01.jpg" alt="">
+        <img src="imagens/banner/02.png" alt="">
+      </section>
+
+      <section class="sobre">
+        <img src="imagens/sobre/02.png">
+
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem pariatur quisquam soluta inventore quod molestias ratione hic nulla! Fugiat praesentium molestias assumenda impedit? Dignissimos doloribus laboriosam non quia, porro temporibus?
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, molestias sequi. Neque consectetur cum accusantium quis sapiente praesentium iure minima. Impedit animi deserunt porro illo repudiandae quo est quod expedita.</p>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Larissa Korz - 2021</p>
+  </footer>
+</body>
+</html>

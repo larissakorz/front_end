@@ -1,0 +1,35 @@
+.fundoTopo{
+  background-color:rgb(218, 150, 6);
+}
+
+.fundoTopo a{
+  color: white;
+}
+
+.fundoTopo a:hover{
+  color: black;
+}
+
+.pesquisa{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.produtos .card{
+  margin-bottom: 20px;
+}
+
+.produtos p{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.produtos img{
+  width: 60%;
+  margin-left: 20%;
+}
+
+.iconeCarrinho{
+  color: white;
+  margin-top: 5px;
+}

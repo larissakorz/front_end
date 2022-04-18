@@ -1,0 +1,33 @@
+header{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header img{
+  padding: 15px;
+}
+
+nav{
+  display: none;
+}
+
+select{
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+.sobre{
+  display: flex; /*colocar o texto do lado da imagem*/
+  flex-direction: column;
+  align-items: center; /*imagem no centro da página*/
+}
+
+.sobre p{
+  margin: 20px; 
+  text-indent: 20px; /*Paragrafo*/
+  line-height: 23px; /*linhas*/
+  text-align: justify; /* Deixar as linhas retas*/
+}

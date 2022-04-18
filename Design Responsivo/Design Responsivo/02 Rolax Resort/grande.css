@@ -1,0 +1,103 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1{
+  padding: 15px;
+  font-family: fonteResort;
+  font-size: 48px;
+}
+
+header a{
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 27px;
+}
+
+header a:hover{
+  background-color: rgb(204, 201, 201);
+}
+
+.banner{
+  width: 100%;
+  background-image: url(imagens/banner.jpg);
+  height: 600px;
+  background-position: bottom center;
+}
+
+.banner h1{
+  text-align: center;
+  font-size: 32px;
+  padding-top: 100px;
+}
+
+.quartos{
+  width: 100%;
+  display: flex; /*Deixar um do lado do outro*/
+  justify-content: space-around;
+}
+
+.quartos div{
+  width: 250px;
+  margin: 35px
+}
+
+.quartos img{
+  width: 250px;
+}
+
+.quartos p{
+  text-align: justify;
+  text-indent: 30px; 
+  line-height: 25px;
+  margin-top: 50px;
+}
+
+.titulo h1{
+  padding: 40px;
+  background-color: rgb(236, 142, 125);
+  text-align: center;
+  font-family: fonteResort;
+  font-size: 45px;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.oferecemos{
+  background-color: rgb(236, 142, 125);
+  padding: 40px;
+  font-family: fonteResort;
+  font-size: 35px;
+  text-align: center;
+}
+
+.pratos{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.pratos div{
+  display: inline-block;
+  margin-left: 25px;
+  margin-bottom: 35px;
+  width: 250px;
+  margin-top: 35px;
+}
+
+.pratos img{
+  margin-bottom: 10px;
+  box-shadow: 0px 5px 10px gray;
+  width: 250px;
+}
+
+.pratos p{
+  text-align: center;
+  font: 20px;
+}

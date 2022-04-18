@@ -1,0 +1,91 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1{
+  padding: 15px;
+  font-family: fonteResort;
+  font-size: 48px;
+}
+
+header a{
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 10px;
+} 
+
+header a:hover{
+  background-color: rgb(204, 201, 201);
+}
+
+.banner img{
+  width: 100%;
+}
+
+
+.banner{
+  width: 100%;
+  background-image: url(imagens/banner.jpg);
+  height: 600px;
+  background-position: bottom center;
+}
+
+.banner h1{
+  text-align: center;
+  font-size: 32px;
+  padding-top: 100px;
+}
+
+
+.quartos{
+  width: 100%;
+  display: flex; /*Deixar um do lado do outro*/
+  justify-content: space-around;
+}
+
+.quartos div{
+  width: 250px;
+  margin: 35px
+}
+
+.quartos img{
+  width: 250px;
+}
+
+.quartos p{
+  text-align: justify;
+  text-indent: 30px; 
+  line-height: 25px;
+  margin-top: 50px;
+}
+
+.titulo h1{
+  padding: 25px;
+  background-color: rgb(236, 142, 125);
+  text-align: center;
+  font-family: fonteResort;
+  font-size: 40px;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.oferecemos{
+  background-color: rgb(236, 142, 125);
+  padding: 40px;
+  font-family: fonteResort;
+  font-size: 30px;
+  text-align: center;
+}
+
+.pratos{
+  width: 100%;
+  display: flex;
+}

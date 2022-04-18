@@ -1,0 +1,45 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center; /*Adequar o tamanho da imagem */
+  flex-direction: column;
+}
+
+header img{
+  padding: 10px;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+select{
+  display: none;
+}
+
+.sobre{
+  width: 560px;
+  margin: 0 auto; /* auto=centro*/
+  display: flex; /*Deixar um do lado do outro*/
+  justify-content: space-between;
+}
+
+.sobre img{
+  width: 240px;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.sobre div{
+  width: 250px; /*LARGURA DO TEXTO*/
+}
+
+.sobre p{
+  text-align: justify; /* Deixar as linhas retas*/
+  text-indent: 30px; /*Paragrafo*/
+  line-height: 25px; /*linhas*/
+  margin-top: 10px; /*espaço da imagem p texto*/
+}
